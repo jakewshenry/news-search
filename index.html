@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet"  href="./assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="jumbotron header">
+        <h1 class="display-4 text-center">New York Times Search</h1>
+     </div>
+     <form>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Search Term</label>
+          <input type="search" class="form-control" id="search-term">
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">Number of Records to Retrieve</label>
+          <select class="form-control" id="number-of-records">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Start Year (Optional)</label>
+            <input type="search" class="form-control" id="start-year">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">End Year (Optional)</label>
+            <input type="search" class="form-control" id="end-year">
+          </div>
+        <button class="btn btn-primary" type="submit" id="search">Search</button>
+        <button class="btn btn-primary" type="submit" id="clear-results">Clear Results</button>
+        <div id="search-results"> </div>
+      </form>
+      <script src="./assets/js/index.js"></script>
+</body>
+</html>
